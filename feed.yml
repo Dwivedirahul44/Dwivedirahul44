@@ -14,7 +14,10 @@ jobs:
         with:
           feed_urls: "https://zurious.blogspot.com/feeds/posts/default"
       - name: Commit changed files
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: dwivedirahul44/git-auto-commit-action@v4
         with:
           commit_message: Save Generated Blog Posts
           skip_checkout: true
+      - name: Github Readme Blog Post Action
+        uses: ErrorGamer2000/github-readme-blog-post-action@v1
+
